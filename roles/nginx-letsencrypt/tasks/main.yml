@@ -1,7 +1,0 @@
----
-- name: Adding folder for SSL 
-  file: path=/opt/acme state=directory
-
-- name: Receive SSL certificate
-  shell: letsencrypt certonly --non-interactive --agree-tos --webroot -w /opt/acme -d lavrentyevas.devops.rebrain.srwx.net --email lavrentyevas@mail.ru
-  creates: /etc/letsencrypt/live/lavrentyevas.devops.rebrain.srwx.net
